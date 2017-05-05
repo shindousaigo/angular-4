@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 
-import { HomepageComponent } from './homepage.component';
+
 import { HomepageRoutingModule } from './homepage-routing.module';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
+import { HomepageComponent } from './homepage.component';
 
 @NgModule({
   imports: [
-    HomepageRoutingModule
+    HomepageRoutingModule,
+    BsDropdownModule,
   ],
-  declarations: [HomepageComponent]
+  declarations: [
+    HomepageComponent
+  ]
 })
 export class HomepageModule { }

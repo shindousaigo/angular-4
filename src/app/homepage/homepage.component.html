@@ -1,1 +1,17 @@
 <h1>shindousaigo</h1>
+
+<div class="btn-group" dropdown>
+  <button type="button" class="btn btn-secondary dropdown-toggle" dropdownToggle> 
+    <span>{{default}}</span>
+    <span class="caret"></span>
+  </button>
+
+  <ul *dropdownMenu class="dropdown-menu" role="menu" (click)="onSelect(event)">
+
+    <li role="menuitem"><a class="dropdown-item">Action</a></li>
+    <li role="menuitem"><a class="dropdown-item">Another action</a></li>
+    <li role="menuitem"><a class="dropdown-item">Something else here</a></li>
+  </ul>
+</div>
+
+<li *ngFor="let detail of details">{{detail}}</li>

@@ -3,10 +3,19 @@ import { Router } from '@angular/router';
 
 @Component({
   templateUrl: 'homepage.component.html'
+
 })
 
 export class HomepageComponent {
-  // ngOnInit(): void {
-  //   console.log(`@@@`)
-  // }
+  details = [
+    { name: 'a' },
+    { name: 'b' },
+    { name: 'c' },
+  ]
+  default = 'Angular';
+
+  isActive = false
+  onSelect(e) {
+    console.log(e)
+  }
 }

@@ -38,8 +38,8 @@ import { SimpleLayoutComponent } from './layouts/simple-layout.component';
   ],
   providers: [{
     provide: LocationStrategy,
-    useClass: PathLocationStrategy
+    useClass: HashLocationStrategy
   }],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
